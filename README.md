@@ -34,7 +34,7 @@ Desenvolver um sistema de reconhecimento de raças de cachorro. Porém, com uma 
 
 - É importante deixar claro que o **dataset** utilizado nesse problema é de posse exclusiva da empresa que ofertou esse desafio, por tanto, ele só será disponibilizado caso eu seja autorizado a fazer o mesmo;
 
-- O dataset deverá ser extraído para a pasta `/data` conforme apresentado na sessão \#4 (Estrutura);
+    - O dataset deverá ser extraído para a pasta `/data` conforme apresentado na sessão \#4 (Estrutura);
 
 - Caso tenha instalado os `requirements.txt` em um ambiente virtual, talvez seja necessário registrar esse ambiente no `jupyter notebook`. Pode-se fazer isso executando os seguintes passos:
     - `conda install -c anaconda ipykernel`
