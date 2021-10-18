@@ -27,8 +27,12 @@ Desenvolver um sistema de reconhecimento de raças de cachorro. Porém, com uma 
 <br>
 
 ## 2. Instalação <br>
+- O primeiro passo é instalar as dependências do ambiente presente no arquivo `requirements.txt` na raiz do projeto;
+    - ```pip install -r requirements.txt```
 
-- É importante deixar claro que o **dataset** utilizado nesse desafio é te posse exclusiva da empresa que ofertou esse desafio, por tanto, eles só serão disponibilizados eu seja autorizado a fazer o mesmo;
+- É importante deixar claro que o **dataset** utilizado nesse problema é de posse exclusiva da empresa que ofertou esse desafio, por tanto, ele só será disponibilizado caso eu seja autorizado a fazer o mesmo;
+
+- O dataset deverá ser extraído para a pasta `/data` conforme apresentado na sessão \#4 (Estrutura);
 
 - Caso tenha instalado os `requirements.txt` em um ambiente virtual, talvez seja necessário registrar esse ambiente no `jupyter notebook`. Pode-se fazer isso executando os seguintes passos:
     - `conda install -c anaconda ipykernel`
