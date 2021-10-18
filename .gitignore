@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Dataset
+/data
+view
+*.tmp
+.vscode/settings.json
+*.yaml
+*.json
+*.wandb
+*.txt
+*.png
+*.ckpt
