@@ -130,13 +130,13 @@ dmypy.json
 
 # Dataset
 /data
+\wandb
 view
 *.tmp
 .vscode/settings.json
 *.yaml
 *.json
 *.wandb
-*.txt
 *.png
 *.ckpt
 *.rar
