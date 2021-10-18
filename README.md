@@ -1,10 +1,11 @@
-# Dog Breed Recognition
+# Dog Breed Recognition :dog: <br><br>
 
 ## 1. A ideia:
 
-Desenvolver um sistema de reconhecimento de raças de cachorro. Porém, com ma dificuldade extra: adicionar raças que não foram vistas em tempo de treinamento, e saber identificar *unknowns.*
+Desenvolver um sistema de reconhecimento de raças de cachorro. Porém, com uma dificuldade extra: adicionar raças que não foram vistas em tempo de treinamento, e saber identificar *unknowns.*
 
-O problema foi dividido em 3 partes:
+
+### O problema foi dividido em 3 partes + Aplicação Web: <br>
 - **Primeira parte (Treinamento):**
     - Treinar um modelo com um total de **100** raças de cachorros;
     - Apresentar os resultados desse modelo; <br><br>
@@ -18,9 +19,88 @@ O problema foi dividido em 3 partes:
     - Treinar um modelo com um total de **100** raças de cachorros;
     - Apresentar os resultados desse modelo; 
 
+- **Aplicação Web:**
+    - Aplicação web com front-end simples;
+    - Deverá ser possível fazer o upload da imagem e verificar o reconhecimento do sistema;
+    - Deverá haver uma maneira fácil de executar a aplicação;
 
-## 2. A estrutura
-- 
--
+---
+<br>
+
+## 2. Instalação <br>
+
+- É importante deixar claro que o **dataset** utilizado nesse desafio é te posse exclusiva da empresa que ofertou esse desafio, por tanto, eles só serão disponibilizados eu seja autorizado a fazer o mesmo;
+
+- É **necessário** fazer [download](https://drive.google.com/file/d/1lmXQy3a4nZ1b3BDPZ2lE_TKpPdFosFuM/view?usp=sharing) dos dados pertencentes a pasta `/data`;
+
+- É **necessário** fazer [download](https://drive.google.com/file/d/1nXhO9oe2rH3wlqgdTDbL2PBfk3AnkaPd/view?usp=sharing) dos pesos dos modelos pertencentes a pasta `/models`;
+
+---
+<br>
 
 ## 3. Executando os códigos
+Não existe uma ordem definada para executar os arquivos deste repositório, mas para definir uma ordem de resolução do problema dado o desafio proposto deve ser executados os seguintes arquivos:
+
+### Primeira Parte (Treinamento)
+- /notebooks/Dog-Breed-Data-Analysis.ipynb (análise do dataset)
+- /notebooks/Dog-Breed-Classification.ipynb (treinamento de modelo - pré-treino - ResNet18)
+- /notebooks/Dog-Breed-Classification-Baseline.ipynb (treinamento de modelo - baseline - ResNet18)
+- /notebooks/Dog-Breed-Classification-Baseline.ipynb (treinamento de modelo - ResNet50)
+- /notebooks/Dog-Breed-Results.ipynb (análise dos resultados)
+
+### Segunda e Terceira Parte (Enroll + Unknown)
+- /notebooks/Dog-Breed-Feature-Extractor.ipynb (extração de features)
+- /notebooks/Dog-Breed-Enroll-Unknown.ipynb (criação de modelo enroll + unknown)
+
+### Aplicação Web
+- /src/app.py (Aplicação Web utilizando [Streamlit.io](https://streamlit.io/))
+- para acessar a aplicação basta executar o comando ```streamlit run app.py```
+
+
+
+---
+## 4. Estrutura
+
+    - /data 
+        - enroll_dict.pkl
+        - resnet50-test_enroll_features_labels.pickle
+        - resnet50-train_enroll_features.pickle
+        - resnet50-validation_features_labels.pickle
+        - test_enroll_features_labels.pickle
+        - train_enroll_features.pickle
+        - validation_features_labels.pickle
+        
+        - /dogs
+            - /train
+            - /recognition
+                - /enroll
+                - /test
+
+    - /models
+        - /knn-breed 
+        - /knn-unknown
+        - /resnet-18-baseline
+        - /resnet-18-enhanced-fc
+        - /resnet-18-enhanced-layer4
+        - /resnet-50
+
+    - /notebooks
+        - Dog-Breed-Classification-Baseline.ipynb
+        - Dog-Breed-Classification-ResNet50.ipynb
+        - Dog-Breed-Classification.ipynb
+        - Dog-Breed-Data-Analysis.ipynb
+        - Dog-Breed-Enroll-Unknown.ipynb
+        - Dog-Breed-Feature-Extractor.ipynb
+        - Dog-Breed-Results.ipynb
+
+    - /reports
+        - /figures
+        - /results
+
+    - /src
+        - /app.py
+        - /dataset.py
+        - /model.py
+
+    - README.md
+    - requirements.txt
