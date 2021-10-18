@@ -24,22 +24,27 @@ Desenvolver um sistema de reconhecimento de raças de cachorro. Porém, com uma 
     - Deverá ser possível fazer o upload da imagem e verificar o reconhecimento do sistema;
     - Deverá haver uma maneira fácil de executar a aplicação;
 
----
 <br>
 
 ## 2. Instalação <br>
 
 - É importante deixar claro que o **dataset** utilizado nesse desafio é te posse exclusiva da empresa que ofertou esse desafio, por tanto, eles só serão disponibilizados eu seja autorizado a fazer o mesmo;
 
+- Caso tenha instalado os `requirements.txt` em um ambiente virtual, talvez seja necessário registrar esse ambiente no `jupyter notebook`. Pode-se fazer isso executando os seguintes passos:
+    - `conda install -c anaconda ipykernel`
+    - `python -m ipykernel install --user --name={nome-do-env}`
+
 - É **necessário** fazer [download](https://drive.google.com/file/d/1lmXQy3a4nZ1b3BDPZ2lE_TKpPdFosFuM/view?usp=sharing) dos dados pertencentes a pasta `/data`;
 
 - É **necessário** fazer [download](https://drive.google.com/file/d/1nXhO9oe2rH3wlqgdTDbL2PBfk3AnkaPd/view?usp=sharing) dos pesos dos modelos pertencentes a pasta `/models`;
 
----
+
 <br>
 
 ## 3. Executando os códigos
-Não existe uma ordem definada para executar os arquivos deste repositório, mas para definir uma ordem de resolução do problema dado o desafio proposto deve ser executados os seguintes arquivos:
+Não existe uma ordem definada para executar os arquivos deste repositório, mas para definir uma ordem de resolução do problema dado o desafio proposto devem ser executados os seguintes arquivos:
+
+*É importante mencionar que caso haja interesse em treinar os modelos novamente, será requisitado um cadastro na ferramenta [wandb](https://wandb.ai/).*
 
 ### Primeira Parte (Treinamento)
 - /notebooks/Dog-Breed-Data-Analysis.ipynb (análise do dataset)
@@ -57,8 +62,6 @@ Não existe uma ordem definada para executar os arquivos deste repositório, mas
 - para acessar a aplicação basta executar o comando ```streamlit run app.py```
 
 
-
----
 ## 4. Estrutura
 
     - /data 
