@@ -44,8 +44,6 @@ Desenvolver um sistema de reconhecimento de raças de cachorro. Porém, com uma 
 
 - É **necessário** fazer [download](https://drive.google.com/file/d/1nXhO9oe2rH3wlqgdTDbL2PBfk3AnkaPd/view?usp=sharing) dos pesos dos modelos pertencentes a pasta `/models`;
 
-- É **necessário** fazer [download](https://drive.google.com/file/d/15qCaSNRX4j67humqf_QPDpj5v9Y29en7/view?usp=sharing) dos logs do ```wandb``` e extraí-los para a pasta `/notebooks`, uma vez que o ```wandb``` cria uma dependência em relação aos pesos dos modelos treinados;
-
 
 <br>
 
