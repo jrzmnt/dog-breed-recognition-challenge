@@ -27,7 +27,7 @@ Desenvolver um sistema de reconhecimento de raças de cachorro. Porém, com uma 
 <br>
 
 ## 2. Instalação <br>
-- Este projeto foi desenvolvido utilizando Python na versão [`3.7.1`](https://www.python.org/downloads/release/python-371/) e foi executado nos sistemas operacionais `Windows 10` e `Ubuntu 20.04`.
+- Este projeto foi desenvolvido utilizando Python na versão [`3.7.1`](https://www.python.org/downloads/release/python-371/) e foi executado nos sistemas operacionais `Windows 10` (recomendado) e `Ubuntu 20.04` (*detalhe que ao rodar no ubuntu percebi problemas ao carregar os pesos treinados no windows*).
 
 - O primeiro passo é instalar as dependências do ambiente presente no arquivo `requirements.txt` na raiz do projeto;
     - ```pip install -r requirements.txt```
